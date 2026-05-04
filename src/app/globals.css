@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Star Jedi Outline";
+  src: url("/fonts/Starjout.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-deep-space: #0b0b0f;
+  --color-crawl-gold: #f5c518;
+  --color-amber-glow: #ffd54f;
+  --color-imperial-gray: #1a1a22;
+  --color-saber-blue: #4fc3f7;
+  --color-saber-green: #66bb6a;
+  --color-sith-red: #ef5350;
+  --color-lightsaber-glow: #b388ff;
+  --color-star-white: #e8eaed;
+  --color-dust-gray: #9e9e9e;
+  --color-nebula-gray: #2a2a34;
+  --color-void-black: #050507;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-body: var(--font-lexend);
+  --font-display: var(--font-orbitron);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(ellipse at 20% 50%, #f5c51810 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, #ffd54f08 0%, transparent 40%),
+    #0b0b0f;
+  color: #e8eaed;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1 {
+  font-family: "Star Jedi Outline", var(--font-display), sans-serif;
+}
+
+h2 {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: 0.05em;
 }

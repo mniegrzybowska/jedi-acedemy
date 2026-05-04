@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm test:*)",
+      "Bash(pnpm lint:*)",
+      "Bash(pnpm dev:*)"
+    ],
+    "deny": [
+      "Bash(git commit:*)",
+      "Bash(env:*)",
+      "Bash(printenv:*)",
+      "Bash(echo $*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(ufw:*)",
+      "Bash(ssh:*)",
+      "Bash(top:*)",
+      "Bash(htop:*)",
+      "Bash(ps:*)",
+      "Bash(nc:*)",
+      "Bash(telnet:*)",
+      "Bash(nmap:*)",
+      "Bash(tcpdump:*)",
+      "Bash(netstat:*)",
+      "Bash(ss:*)",
+      "Bash(apt:*)"
+    ]
+  }
+}
